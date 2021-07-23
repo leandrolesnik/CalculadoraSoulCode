@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {View, Text, TextInput, StyleSheet, TouchableOpacity , Dimensions, Image} from 'react-native';
+import {View, Text, TextInput, StyleSheet, TouchableOpacity , Dimensions} from 'react-native';
 
 export default function Content() {
 
@@ -55,7 +55,6 @@ export default function Content() {
    
   return (
     <View style={css.conteudo}>
-      <Image source={require('../../assets/img.png')} style={css.logo}/>
       <Text style={css.TextResultado}>{calc.R}</Text>
       <TextInput style={css.TextValores} onChangeText={
         (valorCampo) => handleInputChange("A", Number(valorCampo))
